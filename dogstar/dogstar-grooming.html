@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dogstar Grooming — Dog & cat grooming on Fordham Rd, Bronx</title>
+<meta name="description" content="Dog and cat grooming, day care, and supplies on E Fordham Rd in Belmont. 4.9 stars. Text or call to book.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#0F1A33; --deep:#182A52; --gold:#F2C14E; --ice:#F4F6FA; --slate:#5B6478; --line:rgba(15,26,51,.12);
+  --display:'Unbounded',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--body);color:var(--night);background:var(--ice);line-height:1.55;-webkit-font-smoothing:antialiased;padding-bottom:88px}
+a{color:inherit}
+.wrap{width:min(1040px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--display);line-height:1.02;letter-spacing:-.02em}
+h1{font-size:clamp(2.4rem,8vw,5.2rem);font-weight:900;text-transform:uppercase}
+h2{font-size:clamp(1.6rem,4vw,2.4rem);font-weight:700}
+h3{font-size:1.05rem;font-weight:700}
+.eyebrow{font-size:.74rem;letter-spacing:.16em;text-transform:uppercase;font-weight:600;color:var(--slate)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.6rem;padding:1rem 1.5rem;border-radius:12px;font-weight:600;text-decoration:none;font-size:1.02rem;transition:transform .15s,background .15s}
+.btn:active{transform:scale(.98)}
+.btn-gold{background:var(--gold);color:var(--night)}
+.btn-gold:hover{background:#ffd266}
+.btn-line{border:1.5px solid currentColor;color:var(--ice);background:transparent}
+.btn-dark{background:var(--night);color:var(--ice)}
+:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+
+/* hero — night sky */
+.sky{background:radial-gradient(1200px 600px at 70% -10%,var(--deep),var(--night) 60%);color:var(--ice);position:relative;overflow:hidden}
+.sky header{padding:22px 0;position:relative;z-index:2}
+.sky header .wrap{display:flex;justify-content:space-between;align-items:center}
+.brand{font-family:var(--display);font-weight:900;font-size:1.05rem;text-decoration:none;letter-spacing:.02em;display:flex;align-items:center;gap:.5rem}
+.brand svg{width:22px;height:22px;color:var(--gold)}
+.sky nav a{font-size:.9rem;font-weight:500;text-decoration:none;margin-left:22px;opacity:.85}
+@media(max-width:640px){.sky nav{display:none}}
+.hero{padding:56px 0 80px;position:relative;z-index:2}
+.hero .wrap{display:grid;grid-template-columns:1fr auto;gap:40px;align-items:end}
+@media(max-width:820px){.hero .wrap{grid-template-columns:1fr}}
+.hero h1 span{color:var(--gold)}
+.hero p.lead{font-size:1.15rem;max-width:46ch;margin:22px 0 30px;color:#C9D1E3}
+.hero .actions{display:flex;flex-wrap:wrap;gap:12px}
+.rating-card{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:22px 24px;min-width:230px;backdrop-filter:blur(6px)}
+.rating-card .big{font-family:var(--display);font-size:3rem;font-weight:900;line-height:1;color:var(--gold)}
+.rating-card .stars{letter-spacing:3px;color:var(--gold);margin:6px 0}
+.rating-card small{color:#C9D1E3}
+/* stars field */
+.stars-field{position:absolute;inset:0;z-index:1;pointer-events:none}
+.stars-field i{position:absolute;width:3px;height:3px;background:#fff;border-radius:50%;opacity:.7;box-shadow:0 0 6px 1px rgba(255,255,255,.4)}
+.stars-field i.g{background:var(--gold);box-shadow:0 0 8px 2px rgba(242,193,78,.5)}
+@media(prefers-reduced-motion:no-preference){.stars-field i{animation:twinkle 3.2s ease-in-out infinite}.stars-field i:nth-child(odd){animation-duration:4.1s;animation-delay:1.2s}}
+@keyframes twinkle{0%,100%{opacity:.35}50%{opacity:.95}}
+
+section{padding:56px 0}
+.section-head{margin-bottom:26px}
+.section-head p{color:var(--slate);max-width:52ch;margin-top:8px}
+
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:820px){.grid3{grid-template-columns:1fr}}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px}
+.card h3{margin-bottom:8px}
+.card p{color:#3a4358;font-size:.95rem}
+.card .tag{display:inline-block;font-size:.72rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;background:var(--ice);border:1px solid var(--line);border-radius:999px;padding:4px 10px;margin-bottom:12px}
+
+.services{background:var(--night);color:var(--ice);border-radius:22px;padding:44px 36px}
+@media(max-width:640px){.services{padding:32px 20px}}
+.services .eyebrow{color:var(--gold)}
+.services ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:0 40px;margin-top:22px}
+@media(max-width:640px){.services ul{grid-template-columns:1fr}}
+.services li{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid rgba(255,255,255,.12);font-weight:500}
+.services li span{color:#C9D1E3;font-weight:400;font-size:.9rem;text-align:right}
+.services .note{margin-top:22px;color:#C9D1E3;font-size:.95rem}
+
+.gallery{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media(max-width:820px){.gallery{grid-template-columns:repeat(2,1fr)}}
+.shot{aspect-ratio:4/5;border-radius:14px;background:linear-gradient(160deg,#E3E8F2,#C5CDDE);position:relative;display:flex;align-items:flex-end;padding:12px;overflow:hidden}
+.shot::after{content:"★";position:absolute;right:10px;top:6px;font-size:3.5rem;color:#fff;opacity:.6}
+.shot span{font-size:.74rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;background:#fff;border-radius:999px;padding:5px 10px}
+.gallery-note{margin-top:14px;font-size:.9rem;color:var(--slate)}
+
+.reviews{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+@media(max-width:820px){.reviews{grid-template-columns:1fr}}
+.review{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;border-top:4px solid var(--gold)}
+.review p{font-weight:500;font-size:1.1rem;line-height:1.4}
+.review small{display:block;margin-top:14px;color:var(--slate)}
+
+.info{display:grid;grid-template-columns:1fr 1fr;gap:40px;padding:44px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+@media(max-width:640px){.info{grid-template-columns:1fr;gap:28px}}
+.hours{list-style:none;margin-top:14px}
+.hours li{display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--line)}
+.hours li.closed{color:#8A93A8}
+.info p{margin-top:14px}
+.info a{font-weight:600}
+.map-btn{margin-top:16px}
+
+footer{padding:36px 0 30px;font-size:.88rem;color:var(--slate)}
+footer .demo{margin-top:14px;padding:14px 16px;background:#fff;border:1px dashed var(--line);border-radius:12px}
+
+.sticky{position:fixed;left:0;right:0;bottom:0;padding:12px 16px calc(12px + env(safe-area-inset-bottom));background:rgba(244,246,250,.94);backdrop-filter:blur(10px);border-top:1px solid var(--line);display:flex;gap:10px;z-index:50}
+.sticky .btn{flex:1;padding:.95rem}
+@media(min-width:821px){.sticky{display:none}body{padding-bottom:0}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<div class="sky">
+  <div class="stars-field" aria-hidden="true">
+    <i style="left:8%;top:18%"></i><i style="left:14%;top:62%"></i><i class="g" style="left:22%;top:34%"></i><i style="left:31%;top:12%"></i>
+    <i style="left:44%;top:70%"></i><i class="g" style="left:52%;top:22%"></i><i style="left:61%;top:48%"></i><i style="left:70%;top:14%"></i>
+    <i class="g" style="left:78%;top:58%"></i><i style="left:86%;top:30%"></i><i style="left:93%;top:72%"></i><i style="left:38%;top:44%"></i>
+    <i style="left:66%;top:82%"></i><i class="g" style="left:5%;top:84%"></i><i style="left:90%;top:8%"></i>
+  </div>
+  <header>
+    <div class="wrap">
+      <a class="brand" href="#"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.9 6.6 7.1.7-5.4 4.8 1.6 7L12 17.4 5.8 21.1l1.6-7L2 9.3l7.1-.7z"/></svg>DOGSTAR</a>
+      <nav><a href="#services">Services</a><a href="#work">Our work</a><a href="#hours">Hours</a><a href="#book">Book</a></nav>
+    </div>
+  </header>
+  <section class="hero" id="book">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow" style="color:var(--gold)">Belmont · E Fordham Rd · Dogs &amp; cats</p>
+        <h1>Groomed like<br>a <span>star.</span></h1>
+        <p class="lead">Full grooming for dogs and cats, a big play area, and the supplies you need on the way out. Right on Fordham Road, steps from Arthur Avenue.</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="sms:+19176055434?&body=Hi!%20I%27d%20like%20to%20book%20a%20groom%20for%20my%20(pet%27s%20name%2C%20breed).%20What%20times%20are%20open%3F">Text to book</a>
+          <a class="btn btn-line" href="tel:+19176055434">Call (917) 605-5434</a>
+        </div>
+      </div>
+      <div class="rating-card">
+        <div class="big">4.9</div>
+        <div class="stars">★★★★★</div>
+        <small>149 Google reviews</small>
+      </div>
+    </div>
+  </section>
+</div>
+
+<section id="why">
+  <div class="wrap">
+    <div class="grid3">
+      <div class="card"><span class="tag">Grooming</span><h3>Dogs and cats, any coat</h3><p>Baths, cuts, de-shedding, nails, ears — including the matted, nervous, and first-timers.</p></div>
+      <div class="card"><span class="tag">Day care</span><h3>A real play area</h3><p>Room to run while you're at work, not a crate in the back. Ask about half and full days.</p></div>
+      <div class="card"><span class="tag">Shop</span><h3>Supplies on the way out</h3><p>Food, treats, shampoo, leashes — grab what you need when you pick up.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="services">
+  <div class="wrap">
+    <div class="services">
+      <p class="eyebrow">Services</p>
+      <h2>What we do</h2>
+      <ul>
+        <li>Full groom <span>bath, haircut, nails, ears, sanitary trim</span></li>
+        <li>Bath &amp; brush-out <span>shampoo, conditioner, blow-dry</span></li>
+        <li>De-shedding <span>heavy coats, seasonal blow-outs</span></li>
+        <li>De-matting <span>gentle, patient, no shame</span></li>
+        <li>Nail trim <span>quick visit</span></li>
+        <li>Teeth &amp; ears <span>add-on</span></li>
+        <li>Cat grooming <span>bath, lion cut, nails</span></li>
+        <li>Day care <span>half or full day</span></li>
+      </ul>
+      <p class="note">Prices depend on size and coat. Text a photo of your pet for a quote — usually answered within the hour during shop time.</p>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">Our work</p>
+      <h2>Fresh off the table</h2>
+    </div>
+    <div class="gallery">
+      <div class="shot"><span>Before</span></div>
+      <div class="shot"><span>After</span></div>
+      <div class="shot"><span>Holiday photo</span></div>
+      <div class="shot"><span>Cat lion cut</span></div>
+    </div>
+    <p class="gallery-note">Placeholders in the preview — your own photos go here, including the holiday shots customers love.</p>
+  </div>
+</section>
+
+<section id="reviews">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow">From Google reviews</p>
+      <h2>Bronx says</h2>
+    </div>
+    <div class="reviews">
+      <div class="review"><p>“Hands down the BEST groomers in the Bronx.”</p><small>Google review · Hatchi</small></div>
+      <div class="review"><p>“You can tell she has a passion for these animals.”</p><small>Google review · Diva</small></div>
+      <div class="review"><p>“She was able to squeeze me in last minute.”</p><small>Google review</small></div>
+    </div>
+  </div>
+</section>
+
+<section id="hours">
+  <div class="wrap">
+    <div class="info">
+      <div>
+        <p class="eyebrow">Hours</p>
+        <ul class="hours">
+          <li><span>Monday</span><span>9:00 am – 5:00 pm</span></li>
+          <li><span>Tue – Thu</span><span>9:00 am – 4:00 pm</span></li>
+          <li><span>Friday</span><span>9:00 am – 3:00 pm</span></li>
+          <li class="closed"><span>Sat – Sun</span><span>Closed</span></li>
+        </ul>
+      </div>
+      <div>
+        <p class="eyebrow">Find us</p>
+        <p>578 E Fordham Rd<br>Bronx, NY 10458 — Belmont, near Arthur Ave</p>
+        <p>Text or call <a href="tel:+19176055434">(917) 605-5434</a><br>Please text rather than Facebook message — it's answered faster.</p>
+        <a class="btn btn-dark map-btn" href="https://maps.google.com/?q=578+E+Fordham+Rd+Bronx+NY+10458">Open in Maps</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <p>© Dogstar Grooming · Bronx, NY</p>
+    <div class="demo">Preview built by [Your name] · [your number]. All wording, photos, and colors are editable.</div>
+  </div>
+</footer>
+
+<div class="sticky">
+  <a class="btn btn-gold" href="sms:+19176055434?&body=Hi!%20I%27d%20like%20to%20book%20a%20groom%20for%20my%20(pet%27s%20name%2C%20breed).%20What%20times%20are%20open%3F">Text to book</a>
+  <a class="btn btn-dark" href="tel:+19176055434">Call</a>
+</div>
+
+</body>
+</html>
